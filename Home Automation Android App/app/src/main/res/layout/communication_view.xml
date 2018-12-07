@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+
+    android:weightSum="1">
+
+
+    <ImageView
+        app:srcCompat="@drawable/masterbedroom"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:text="Master Bedroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:id="@+id/textView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mic"
+        android:id="@+id/btnSpeak"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:clickable="true"
+        android:onClick="mic" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:onClick="switchoff"
+        android:background="@color/colorAccent"
+        android:elevation="7dp"
+        android:clickable="true"
+        android:id="@+id/switchoff"
+        android:layout_alignTop="@+id/switchon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/device9"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:onClick="switchoff"
+            android:text="Power Switch"
+            android:layout_marginBottom="18dp"
+            android:layout_alignBottom="@+id/pwoff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/presence_busy"
+            android:layout_alignTop="@+id/device9"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="29dp"
+            android:onClick="switchoff"
+            android:layout_marginEnd="35dp"
+            android:id="@+id/sdfjdaf"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="-5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="switchoff"
+            app:srcCompat="@drawable/switches"
+            android:id="@+id/pwoff"
+            android:layout_marginLeft="131dp"
+            android:layout_marginStart="131dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:onClick="switchon"
+        android:background="@color/colorAccent"
+        android:elevation="7dp"
+        android:clickable="true"
+        android:id="@+id/switchon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/device8"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:text="Power Switch"
+            android:layout_marginBottom="18dp"
+            android:onClick="switchon"
+            android:layout_alignBottom="@+id/pwon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/presence_online"
+            android:layout_alignTop="@+id/device8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="35dp"
+            android:onClick="switchon"
+            android:id="@+id/sdfjf"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="-5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/switches"
+            android:id="@+id/pwon"
+            android:onClick="switchon"
+            android:layout_marginLeft="131dp"
+            android:layout_marginStart="131dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:onClick="settopboxoff"
+        android:background="@color/colorAccent"
+        android:elevation="7dp"
+        android:clickable="true"
+        android:id="@+id/settopboxoff"
+        android:layout_alignTop="@+id/settopboxon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/device3"
+            android:onClick="settopboxoff"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:text="Airtel Set Top Box"
+            android:layout_marginBottom="18dp"
+            android:layout_alignBottom="@+id/setoff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/presence_busy"
+            android:layout_alignTop="@+id/device3"
+            android:layout_alignParentRight="true"
+            android:onClick="settopboxoff"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="35dp"
+            android:id="@+id/settopbox1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="-5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/setopbox"
+            android:id="@+id/setoff"
+            android:onClick="settopboxoff"
+            android:layout_marginLeft="131dp"
+            android:layout_marginStart="131dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settopboxon"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/switchon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="settopboxon"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/settopbox2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/device2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginTop="-5dp"
+            android:onClick="settopboxon"
+            app:srcCompat="@android:drawable/presence_online" />
+
+        <ImageView
+            android:id="@+id/seton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="131dp"
+            android:layout_marginStart="131dp"
+            android:onClick="settopboxon"
+            app:srcCompat="@drawable/setopbox" />
+
+        <TextView
+            android:id="@+id/device2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="settopboxon"
+            android:text="Airtel Set Top Box"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:onClick="tvon"
+
+        android:background="@color/colorAccent"
+        android:elevation="7dp"
+        android:clickable="true"
+        android:id="@+id/tvon"
+        android:layout_alignTop="@+id/tvoff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tvon"
+            android:id="@+id/device5"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:text="Sony LED TV"
+            android:layout_marginBottom="18dp"
+            android:layout_alignBottom="@+id/tvvon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/presence_online"
+            android:layout_alignTop="@+id/device5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="tvon"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="35dp"
+            android:id="@+id/sdf"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="-5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tv"
+            android:id="@+id/tvvon"
+            android:layout_marginLeft="131dp"
+            android:layout_marginStart="131dp"
+            android:onClick="tvon"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:onClick="tvoff"
+        android:layout_marginTop="9dp"
+        android:background="@color/colorAccent"
+        android:elevation="7dp"
+        android:clickable="true"
+        android:id="@+id/tvoff"
+        android:layout_below="@+id/btnSpeak"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/device4"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"
+            android:onClick="tvoff"
+            android:clickable="true"
+            android:text="Sony LED TV"
+            android:layout_marginBottom="18dp"
+            android:layout_alignBottom="@+id/tvvoff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/presence_busy"
+            android:layout_alignTop="@+id/device4"
+            android:layout_alignParentRight="true"
+            android:onClick="tvoff"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="35dp"
+            android:id="@+id/jh"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="-5dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tv"
+            android:id="@+id/tvvoff"
+            android:layout_marginLeft="131dp"
+            android:onClick="tvoff"
+            android:layout_marginStart="131dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

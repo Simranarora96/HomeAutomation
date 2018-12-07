@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        app:srcCompat="@drawable/bedroom" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:text=" Bedroom"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="mic"
+        app:srcCompat="@drawable/mic" />
+
+    <RelativeLayout
+        android:id="@+id/fanoff"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSpeak"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="fanoff"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imagefanoff"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/fanoff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fanon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSpeak"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="fanon"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/imagefanon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/fanon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ledpopon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/fanoff"
+        android:layout_alignStart="@+id/fanoff"
+        android:layout_below="@+id/fanoff"
+        android:layout_marginTop="34dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="ledceilingon"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/lightonimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/lighton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ledpopoff"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/fanoff"
+        android:layout_alignStart="@+id/fanoff"
+        android:layout_below="@+id/fanoff"
+        android:layout_marginTop="34dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="ledceilingoff"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/lightoffimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/lightoff" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ledwoodoff"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/fanoff"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="ledwoodoff"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/lightwoodoffimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/lightoff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ledwoodon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/fanoff"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="ledwoodon"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/lightwoodonimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/lighton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ledstripoff"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/ledwoodoff"
+        android:layout_alignStart="@+id/ledwoodoff"
+        android:layout_alignTop="@+id/ledpopon"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="ledstripoff"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/lightstripoffimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/lightoff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ledstripon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/ledwoodoff"
+        android:layout_alignStart="@+id/ledwoodoff"
+        android:layout_alignTop="@+id/ledpopon"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="7dp"
+        android:onClick="ledstripon"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/lightstriponimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/lighton" />
+    </RelativeLayout>
+
+</RelativeLayout>

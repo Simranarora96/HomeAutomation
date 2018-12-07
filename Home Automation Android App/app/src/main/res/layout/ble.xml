@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sunnysingh.home.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="56dp"
+        android:background="@color/colorAccent"
+        android:elevation="7dp"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:text="Master Bedroom"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/device"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/device"
+            android:layout_marginLeft="132dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="9dp"
+            app:srcCompat="@drawable/masterbedroom" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorAccent"
+        android:elevation="7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/device2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:text="Bedroom"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/device2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/device2"
+            android:layout_marginLeft="131dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="11dp"
+            app:srcCompat="@drawable/bedroom" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Connect and Play  "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:rotation="20"
+        android:rotationX="5.00"
+        app:srcCompat="@drawable/remotecontrol" />
+
+
+
+
+
+
+</RelativeLayout>
